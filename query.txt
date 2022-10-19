@@ -1,0 +1,8 @@
+CREATE TABLE employee (  
+    emp_id BINARY(16) PRIMARY KEY,  
+    name VARCHAR(255)  
+);  
+INSERT INTO employee (emp_id, name)  
+VALUES (UUID_TO_BIN(UUID()),'John Doe'),  
+      (UUID_TO_BIN(UUID()),'Johnny Dope'),  
+      (UUID_TO_BIN(UUID()),'Jason Gillespie');  
